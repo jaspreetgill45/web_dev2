@@ -1,40 +1,178 @@
-.transparent(){
-    background: transparent;
-    color:white;
-}
-
-body{
+body {
     background-image: url(images/damask-937606_1280.jpg);
     font-family: Ubuntu;
-}
-#wrapper{
+  }
+  #wrapper {
     background: white;
     width: 100%;
-}
-#wrapper_first{
+  }
+  #wrapper_first {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    color:white;
+    color: white;
     padding: 1%;
-}
-#wrapper_first a{
-    color:white;
+  }
+  #wrapper_first a {
+    color: white;
     text-decoration: none;
-}
-#wrapper_first #nav{
+  }
+  #wrapper_first #nav {
     margin-top: 2%;
     display: flex;
-}
-#wrapper_first .nav2{
-  padding-left: 2em
-}
-#background img{
-    width:100%;
-    height: 38em;   
+  }
+  #wrapper_first .nav2 {
+    padding-left: 2em;
+  }
+  #background img {
+    width: 100%;
+    height: 38em;
     margin-top: 0%;
-}
-#text{
-    .transparent;
+  }
+  /*
+  #text {
+    background: black;
+     margin-top: -30%;
+      opacity: 0.5;
+      width: 40%;
+      padding: 5%;
+      margin-left: 22em;
+      
+  }
+  #text h2{
+      color: white;
+  }
+  */
+  #gridbox{
+      display: grid;
+      grid-template-columns: 33%,33%,33%;
+  }
+  #background{
+      grid-column: 1/4;
+      grid-row: 1/3;
+  }
+  #text1{
+      background-color: rgb(255, 0, 0,0.5);
+      grid-column: 1;
+      grid-row: 1/3;
+  }
+  #text2{
+      background-color: rgb(0, 255, 0,0.2);
+      grid-column:2;
+      grid-row: 1/3;
+  }
+  
+  #text3{
+      background-color: rgb(0, 0, 255,0.1);
+      grid-column: 3;
+      grid-row: 1/3;
+  }
+  #text1 h2{
+      padding-top: 45%;
+      color: white;
+      text-align: center;
+  }
+  #text2 h2{
+      padding-top: 50%;
+      color: white;
+      text-align: center;
+  }
+  #text3 h2{
+      padding-top: 65%;
+      color: white;
+      text-align: center;
+  }
+  
+  .button1 {
+     background: rgb(0,0,0,1);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    box-shadow: 0.1em 0.2em 1em #666666;
+    font-size: 1.5em;
+    padding: 1em;
     
-}
+  }
+  .button1 a{
+      text-align: center;
+      text-decoration: none;
+        color: #fafafa;
+  }
+  #login{
+      margin-left: 50%;
+  }
+  #login h2{
+      text-align: left;
+      margin-left: -5%;
+      font-size: 1.5em;
+  }
+  #join h2{
+      text-align: center;
+      margin-left: -5%;
+  }
+  
+  #join  .button1{
+      margin-left: 50%;
+  }
+  #locations{
+      margin-top: 1em;
+      display: flex;
+      justify-content: stretch;
+      align-content: space-between;
+  }
+  .locs img{
+      width:100%;
+  }
+  footer{
+      color:rgb(0,0,0,1);
+      
+      font-size: 1.5em;
+      text-align: center;
+  }
+  
+  
+  /*login page starts*/
+  
+  #wrapperlogin
+  {
+      display: flex;
+      
+  }
+  #first_half{
+      width: 60%;
+      height: 48%;
+  }
+  #first_half img{
+      width: 100%;
+      height: 60em;
+  }
+  #second_half{
+      margin-top: 10%;
+  }
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 1em 1em;
+      margin: 1em 0px;
+      display: inline-block;
+      border: 1px solid purple;
+      box-sizing: border-box;
+  }
+  
+  
+  
+  .container {
+      padding: 5%;
+  }
+  
+  span.psw {
+      float: right;
+      padding-top: 16px;
+  }
+  #footer{
+      background-color: purple;
+      width:100%;
+      color: white;
+      text-align: center;
+      padding: 0.5em;
+  }
+  
